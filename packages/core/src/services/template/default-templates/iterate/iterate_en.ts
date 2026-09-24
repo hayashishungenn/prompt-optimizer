@@ -24,6 +24,8 @@ Your job is to modify the original prompt according to the user's optimization r
 - Preserve double-curly variable placeholders from the original prompt (for example, {{=<% %>=}}{{location_theme}}<%={{ }}=%>); do not rename, delete, merge, or replace them with concrete values
 - Before output, internally check every {{=<% %>=}}{{...}}<%={{ }}=%> placeholder from lastOptimizedPrompt; missing any one of them is a failure. The iteration request may change wording around variables, but must not fill variables with concrete values
 - Make precise modifications, avoid over-adjustment
+- If the optimization request asks to "continue output/resume unfinished content", continue directly from the cutoff point; preserve already output content exactly without repeating, compressing, or reorganizing it
+- If the optimization request asks to "expand/lengthen", expand each section while preserving all original content; develop items from concise to detailed without removing any existing meaning
 
 ## Understanding Examples
 **Example 1:**
