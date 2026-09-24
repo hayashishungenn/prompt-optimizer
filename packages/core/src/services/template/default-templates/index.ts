@@ -15,6 +15,8 @@ import { template as soul_openclaw_compose } from './optimize/soul-openclaw-comp
 import { template as soul_openclaw_compose_en } from './optimize/soul-openclaw-compose_en';
 import { template as soul_hermes_compose } from './optimize/soul-hermes-compose';
 import { template as soul_hermes_compose_en } from './optimize/soul-hermes-compose_en';
+import { template as research_protocol } from './optimize/research-protocol';
+import { template as research_protocol_en } from './optimize/research-protocol_en';
 import { template as context_iterate } from './iterate/context/context-iterate';
 import { template as context_iterate_en } from './iterate/context/context-iterate_en';
 // 上下文消息优化模板（多轮对话模式专用）- 通用模板优先
@@ -164,6 +166,8 @@ export const ALL_TEMPLATES = {
   soul_openclaw_compose_en,
   soul_hermes_compose,
   soul_hermes_compose_en,
+  research_protocol,
+  research_protocol_en,
   context_iterate,
   context_iterate_en,
   context_message_optimize,
